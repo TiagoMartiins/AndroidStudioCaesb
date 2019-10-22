@@ -1,0 +1,53 @@
+<!-- activity_screen_slide.xml -->
+
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/one">
+
+    <androidx.viewpager.widget.ViewPager
+
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fabItem"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        app:fab_label="Home"
+        android:src="@drawable/ic_home"
+        app:fabSize="normal"
+        app:elevation="10dp"
+        app:fab_colorPressed="@color/rosaescuro"
+        app:fab_shadowColor="@color/preto"
+        app:fab_shadowRadius="20dp"
+        app:fab_showShadow="true"></com.github.clans.fab.FloatingActionButton>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btFrente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/seta_pra_frente_24dp"
+        android:layout_gravity="center|end"
+        android:elevation="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btTras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/seta_pra_tras_24dp"
+        android:layout_gravity="center|start"
+        android:elevation="10dp"
+        />
+
+
+</FrameLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:background="@drawable/circle_destino">
+
+        <TextView
+            android:id="@+id/local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titulo"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/hora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data "
+            android:textSize="18sp"
+            android:textAppearance="@color/verde"
+            />
+
+            <TextView
+                android:id="@+id/kms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descriçao"
+                android:textSize="18sp"
+                />
+
+</LinearLayout>
+
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_margin="5dp"-->
+<!--android:orientation="vertical">-->
+
+
+<!--<LinearLayout-->
+<!--    android:id="@+id/linearClicavel"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="horizontal"-->
+<!--    android:background="@drawable/circle_destino"-->
+<!--    >-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/local"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Titulo"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:textSize="18sp"-->
+<!--            android:layout_marginLeft="10dp"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/hora"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Data "-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textAppearance="@color/verde"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/kms"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:text="Descriçao"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:textSize="18sp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            />-->
+<!--    </RelativeLayout>-->
+<!--</LinearLayout>-->
+
+
+
+<!--</LinearLayout>-->

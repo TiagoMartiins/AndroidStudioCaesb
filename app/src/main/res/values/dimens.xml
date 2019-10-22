@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="primeira_linha_activity_main">13dp</dimen>
+    <dimen name="linear_teste">65dp</dimen>
+</resources>

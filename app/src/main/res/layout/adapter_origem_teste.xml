@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circle_teste"
+    android:layout_marginBottom="5dp"
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="22"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/local"
+                style="@style/Widget.MaterialComponents.Chip.Action"
+                android:layout_height="wrap_content"
+                android:layout_weight="11"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:text="Local"
+                android:textColor="@color/rosaescuro"
+                android:textSize="@dimen/txt_size"></TextView>
+
+
+
+            <TextView
+                android:id="@+id/hora"
+                style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Small"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:text="Hora"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="@dimen/txt_size"></TextView>
+
+
+            <TextView
+                android:id="@+id/kms"
+                android:layout_weight="6"
+                android:layout_height="match_parent"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:gravity="center"
+                android:text="Kms"
+                android:textSize="@dimen/txt_size"></TextView>
+
+        </LinearLayout>
+
+</TableLayout>

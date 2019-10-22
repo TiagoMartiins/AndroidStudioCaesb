@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LoginWindow</string>
+    <string name="action_settings">Settings</string>
+    <string name="digite_email">Digite seu e-mail</string>
+    <string name="digite_senha">Digite sua senha</string>
+    <string name="botao_logar">Logar</string>
+    <string name="text_void_account">Não tem conta? Cadastre-se</string>
+    <string name="digite_nome">Digite seu nome</string>
+    <string name="botao_cadastrar">Cadastrar</string>
+    <string name="intro">Captura de imagem</string>
+    <string name="picture">Foto</string>
+    <string name="capture">Abrir Camera</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

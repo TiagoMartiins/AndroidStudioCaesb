@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/idViatura"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/border"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:text="TextView"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/nomeViatura"
+                app:layout_constraintStart_toEndOf="@+id/layoutViatura"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/idCondutor"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/border"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:text="TextView"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/nomeCondutor"
+                app:layout_constraintStart_toEndOf="@+id/layoutCondutor"
+                app:layout_constraintTop_toBottomOf="@+id/idViatura" />
+
+            <TextView
+                android:id="@+id/layoutViatura"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="Viatura :"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/layoutCondutor"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="Condutor :"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutViatura" />
+
+            <TextView
+                android:id="@+id/nomeViatura"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/idViatura"
+                android:layout_toRightOf="@+id/idViatura"
+                android:gravity="center"
+                android:text="TextView"
+                android:textFontWeight="3"
+                android:textSize="15dp"
+                android:textColor="@color/preto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/idViatura"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nomeCondutor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nomeViatura"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/idCondutor"
+                android:layout_toRightOf="@+id/idCondutor"
+                android:gravity="clip_horizontal|center_horizontal|center_vertical"
+                android:text="TextView"
+                android:textColor="@color/preto"
+                android:textFontWeight="3"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/idCondutor"
+                app:layout_constraintTop_toBottomOf="@+id/nomeViatura" />
+
+            <Button
+                android:id="@+id/origemLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Origem"
+                android:background="@drawable/circle"
+                app:layout_constraintEnd_toStartOf="@+id/destinoLink"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idCondutor" />
+
+            <Button
+                android:id="@+id/destinoLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/circle_destino"
+                android:text="Destino"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/origemLink"
+                app:layout_constraintTop_toBottomOf="@+id/idCondutor" />
+
+
+            <TableRow
+                android:id="@+id/tableRow"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:weightSum="25"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tableRow2"
+                app:layout_constraintTop_toBottomOf="@+id/origemLink">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="15"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Local"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/txt_size"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="Hora"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/txt_size"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="right|center_vertical"
+                    android:text="Kms"
+                    android:layout_marginRight="4dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/txt_size"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:weightSum="25"
+                app:layout_constraintEnd_toStartOf="@+id/tableRow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/origemLink">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="15"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Local"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/txt_size"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="Hora"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/txt_size"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="right|center_vertical"
+                    android:text="Kms"
+                    android:layout_marginRight="4dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/txt_size"></TextView>
+
+            </TableRow>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/idOrigem"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                app:layout_constraintEnd_toStartOf="@+id/idDestino"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableRow2" />
+
+            <ScrollView
+                android:id="@+id/frameFragment"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="100dp"
+                android:layout_weight="2"
+                android:background="@drawable/borde"
+                android:elevation="9dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ScrollView>
+
+
+            <FrameLayout
+                android:id="@+id/root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/fabItem"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/ic_home"
+                    app:elevation="10dp"
+                    app:fab_colorPressed="@color/rosaescuro"
+                    app:fab_label="Home"
+                    app:fab_shadowColor="@color/preto"
+                    app:fab_shadowRadius="20dp"
+                    app:fab_showShadow="true"
+                    app:fab_size="normal"></com.github.clans.fab.FloatingActionButton>
+
+
+            </FrameLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
